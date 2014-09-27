@@ -4,7 +4,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target "Polls4Change" do
-
+    pod 'TPKeyboardAvoiding'
+    pod 'RestKit', git: 'https://github.com/kurenn/RestKit.git', branch: 'paginatorPatternWithParameters'
+    pod 'HexColors'
 end
 
 target "Polls4ChangeTests" do
