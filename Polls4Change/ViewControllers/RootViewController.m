@@ -1,19 +1,18 @@
 //
-//  P4CLoginViewController.m
+//  RootViewController.m
 //  Polls4Change
 //
 //  Created by Roel Castano on 9/27/14.
 //  Copyright (c) 2014 P4C. All rights reserved.
 //
 
-#import "P4CLoginViewController.h"
 #import "RootViewController.h"
 
-@interface P4CLoginViewController ()
+@interface RootViewController ()
 
 @end
 
-@implementation P4CLoginViewController
+@implementation RootViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,13 +23,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)signInButtonPressed:(id)sender {
-//    RootViewController *rootVC = [self.storyboard instantiateViewControllerWithIdentifier:@"rootVc"];
-//    
-//    [self presentViewController:rootVC
-//                       animated:YES
-//                     completion:nil];
 
+-(void)awakeFromNib
+{
+    self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
+    self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
 }
 
 /*

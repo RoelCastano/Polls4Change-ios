@@ -1,36 +1,28 @@
 //
-//  P4CLoginViewController.m
+//  FeedViewController.m
 //  Polls4Change
 //
 //  Created by Roel Castano on 9/27/14.
 //  Copyright (c) 2014 P4C. All rights reserved.
 //
 
-#import "P4CLoginViewController.h"
-#import "RootViewController.h"
+#import "FeedViewController.h"
 
-@interface P4CLoginViewController ()
+@interface FeedViewController ()
 
 @end
 
-@implementation P4CLoginViewController
+@implementation FeedViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"DID LOAD Feed");
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-- (IBAction)signInButtonPressed:(id)sender {
-//    RootViewController *rootVC = [self.storyboard instantiateViewControllerWithIdentifier:@"rootVc"];
-//    
-//    [self presentViewController:rootVC
-//                       animated:YES
-//                     completion:nil];
-
 }
 
 /*

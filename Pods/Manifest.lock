@@ -3,6 +3,7 @@ PODS:
   - HexColors (2.2.1)
   - ISO8601DateFormatterValueTransformer (0.5.0):
     - RKValueTransformers (~> 1.0.0)
+  - REFrostedViewController (2.4.7)
   - RestKit (0.22.0):
     - RestKit/Core
   - RestKit/Core (0.22.0):
@@ -28,6 +29,7 @@ PODS:
 
 DEPENDENCIES:
   - HexColors
+  - REFrostedViewController (~> 2.4.6)
   - RestKit (from `https://github.com/kurenn/RestKit.git`, branch `paginatorPatternWithParameters`)
   - TPKeyboardAvoiding
 
@@ -40,6 +42,7 @@ SPEC CHECKSUMS:
   AFNetworking: 80c4e0652b08eb34e25b9c0ff3c82556fe5967b4
   HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
   ISO8601DateFormatterValueTransformer: a7e1ecf4380d0b561306ced1a3f01bd5f65d2213
+  REFrostedViewController: 08870a24788191339608b80b2bd4fce549858f0d
   RestKit: 8aedc01890f52f090ff30f60c709eab072dd14c3
   RKValueTransformers: 994503e34bffdbe0159ff6b497290dd1f8d5657f
   SOCKit: d8d0dd3688ae1026c12367570da8fa8e1a6980fb

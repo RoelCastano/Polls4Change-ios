@@ -5,7 +5,7 @@
 //  Copyright (c) 2013 Icalia Labs. All rights reserved.
 //
 
-#import "ILApiClient.h"
+#import "ApiClient.h"
 #import <AFNetworking/AFJSONRequestOperation.h>
 
 static NSString * const ILApiVersion = @"1";

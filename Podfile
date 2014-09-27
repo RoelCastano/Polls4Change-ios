@@ -4,6 +4,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target "Polls4Change" do
+    pod 'REFrostedViewController', '~> 2.4.6'
     pod 'TPKeyboardAvoiding'
     pod 'RestKit', git: 'https://github.com/kurenn/RestKit.git', branch: 'paginatorPatternWithParameters'
     pod 'HexColors'
