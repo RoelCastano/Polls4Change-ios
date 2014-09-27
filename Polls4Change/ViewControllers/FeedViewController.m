@@ -7,6 +7,7 @@
 //
 
 #import "FeedViewController.h"
+#import <REFrostedViewController/REFrostedViewController.h>
 
 @interface FeedViewController ()
 
@@ -23,6 +24,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)didPressMenuButton:(id)sender {
+    [self.view endEditing:YES];
+    [self.frostedViewController.view endEditing:YES];
+    [self.frostedViewController presentMenuViewController];
 }
 
 /*
