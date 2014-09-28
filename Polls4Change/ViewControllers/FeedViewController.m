@@ -19,6 +19,8 @@
 @property (strong, nonatomic)NSArray* pollQuestionNumbers;
 @property (strong, nonatomic)NSArray* pollDescriptions;
 @property (strong, nonatomic)NSArray* pollRewards;
+@property (strong, nonatomic)NSArray* charityImages;
+@property (strong, nonatomic)NSArray* companyImages;
 @property int lastCellExpanded;
 @property BOOL firstLoad;
 @end
@@ -35,9 +37,13 @@
     self.lastCellExpanded = -1;
 
     // Do any additional setup after loading the view.
+    self.companyImages = [NSArray arrayWithObjects:@"burgerstation", @"tacosjulio", @"rocketpizza", @"takushi",nil];
+    
+    self.charityImages = [NSArray arrayWithObjects:@"becalos", @"educa", @"luca", @"unidos",nil];
+    
     self.companyNames = [NSArray arrayWithObjects:@"Burger Station", @"Tacos del Julio", @"Rocket Pizza", @"Takushi",nil];
     
-    self.charityNames = [NSArray arrayWithObjects:@"Becalos", @"EDUCA", @"LUCA", @"Amigos de la Tierra", @"Unidos",nil];
+    self.charityNames = [NSArray arrayWithObjects:@"Becalos", @"EDUCA", @"LUCA", @"Unidos",nil];
     
     self.pollTitles = [NSArray arrayWithObjects:@"Nuevas Hamburguesas", @"Tacos Favoritos", @"Nuevo Menu", @"Combos",nil];
     
@@ -88,8 +94,8 @@
     cell.pollQuestionNumberLabel.text = [self.pollQuestionNumbers objectAtIndex:indexPath.row];
     cell.pollDescriptionLabel.text = [self.pollDescriptions objectAtIndex:indexPath.row];
     cell.pollRewardsLabel.text = [self.pollRewards objectAtIndex:indexPath.row];
-    cell.companyNameImageView.image = [UIImage imageNamed:@"rocketpizza"];
-    cell.charityNameImageView.image = [UIImage imageNamed:@"educa"];
+    cell.companyNameImageView.image = [UIImage imageNamed: [self.companyImages objectAtIndex:indexPath.row]];
+    cell.charityNameImageView.image = [UIImage imageNamed: [self.charityImages objectAtIndex:indexPath.row]];
     
     if (cell.expanded) {
         cell.expandedContentView.hidden = NO;
