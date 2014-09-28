@@ -8,6 +8,7 @@
 
 #import "PollQuestionsViewController.h"
 #import <HexColors/HexColor.h>
+#import <SendGrid/SendGrid.h>
 
 @interface PollQuestionsViewController ()
 
@@ -55,6 +56,18 @@
 }
 - (IBAction)backButtonPressed:(id)sender {
     [self dismissViewControllerAnimated:self completion:nil];
+}
+- (IBAction)didPressSubmitButton:(id)sender {
+    SendGrid *sendgrid = [SendGrid apiUser:@"MarcoRmz" apiKey:@"Mara19mr."];
+    
+    SendGridEmail *email = [[SendGridEmail alloc] init];
+    email.to = @"roelcastanomoreno@gmail.com";
+    email.from = @"marcojr93@hotmail.com";
+    email.subject = @"Polls4Change Cupon";
+    email.html = @"<h1>Thank you for answering this poll, now enjoy this cupon!   20% off in your entire meal. Cupon Code: 4F563SD</h1>";
+    email.text = @"Thank you for answering this poll, now enjoy this cupon!   20% off in your entire meal. Cupon Code: 4F563SD";
+    
+    [sendgrid sendWithWeb:email];
 }
 
 /*
