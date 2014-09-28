@@ -34,7 +34,7 @@
     self.lastCellExpanded = -1;
 
     // Do any additional setup after loading the view.
-    self.companyNames = [NSArray arrayWithObjects:@"Burger Station", @"Tacos Don Juan", @"Rocket Pizza", @"Takushi",nil];
+    self.companyNames = [NSArray arrayWithObjects:@"Burger Station", @"Tacos del Julio", @"Rocket Pizza", @"Takushi",nil];
     
     self.charityNames = [NSArray arrayWithObjects:@"Becalos", @"EDUCA", @"LUCA", @"Amigos de la Tierra", @"Unidos",nil];
     
@@ -86,7 +86,7 @@
     cell.pollDescriptionLabel.text = [self.pollDescriptions objectAtIndex:indexPath.row];
     cell.pollRewardsLabel.text = [self.pollRewards objectAtIndex:indexPath.row];
     cell.companyNameImageView.image = [UIImage imageNamed:@"rocketpizza"];
-    cell.charityNameImageView.image = [UIImage imageNamed:@"rocketpizza"];
+    cell.charityNameImageView.image = [UIImage imageNamed:@"educa"];
     if (cell.expanded) {
         cell.expandedContentView.hidden = NO;
         cell.expandIconImageView.image = [UIImage imageNamed:@"collapse"];
