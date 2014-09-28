@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 P4C. All rights reserved.
 //
 
-#import <AFNetworking/AFHTTPClient.h>
-
 # ifdef STAGING
 static NSString * const ILBaseURLString = @"";
 # elif DEBUG

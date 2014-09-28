@@ -8,12 +8,10 @@
 
 #import "MenuTableViewController.h"
 #import <REFrostedViewController/REFrostedViewController.h>
-#import "User.h"
 #import "FeedViewController.h"
 #import "SettingsViewController.h"
 #import "ProfileViewController.h"
 #import "PollSentViewController.h"
-#import "ILSession.h"
 
 const int ILNumberOfRowsInSection = 4;
 const int ILNumberOfSections = 1;
@@ -44,8 +42,6 @@ const int ILNumberOfSections = 1;
 
     self.navController.navigationItem.titleView.tintColor = [UIColor whiteColor];
     self.navController.navigationItem.title = @"Feed";
-    
-    User *currentUser = [activeSession currentUser];
     
     //self.userName.text = currentUser.name;
     self.userProfileImageView.layer.cornerRadius = self.userProfileImageView.frame.size.width / 2;

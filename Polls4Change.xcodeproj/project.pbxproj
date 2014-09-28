@@ -13,13 +13,8 @@
 		A9910EC119D7E04300B4D71E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9910EC019D7E04300B4D71E /* ProfileViewController.m */; };
 		A99CB7C519D83C3700792F34 /* PollSentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99CB7C419D83C3700792F34 /* PollSentViewController.m */; };
 		A9CC8C2619D7974700760EEC /* PollExpandableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CC8C2519D7974700760EEC /* PollExpandableCellTableViewCell.m */; };
-		E0451F3719D7906E00A832D7 /* ILSession.m in Sources */ = {isa = PBXBuildFile; fileRef = E0451F3619D7906E00A832D7 /* ILSession.m */; };
 		E0451F3A19D7B55F00A832D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0451F3819D7B55F00A832D7 /* Main.storyboard */; };
 		E050398919D76192005C7195 /* P4CLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E050398819D76192005C7195 /* P4CLoginViewController.m */; };
-		E050398D19D76833005C7195 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E050398C19D76833005C7195 /* User.m */; };
-		E050399119D768B8005C7195 /* MappingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E050399019D768B8005C7195 /* MappingManager.m */; };
-		E050399419D7695E005C7195 /* ApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E050399319D7695E005C7195 /* ApiClient.m */; };
-		E050399719D76A8F005C7195 /* UserMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = E050399619D76A8F005C7195 /* UserMapping.m */; };
 		E050399D19D77C21005C7195 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E050399C19D77C21005C7195 /* RootViewController.m */; };
 		E05039A319D781E8005C7195 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E05039A219D781E8005C7195 /* MenuTableViewController.m */; };
 		E05039A619D7820C005C7195 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E05039A519D7820C005C7195 /* FeedViewController.m */; };
@@ -55,19 +50,9 @@
 		A9CC8C2419D7974700760EEC /* PollExpandableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollExpandableCellTableViewCell.h; sourceTree = "<group>"; };
 		A9CC8C2519D7974700760EEC /* PollExpandableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollExpandableCellTableViewCell.m; sourceTree = "<group>"; };
 		BC9478055ADACFAE4EB8D9D3 /* libPods-Polls4Change.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Polls4Change.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0451F3519D7906E00A832D7 /* ILSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSession.h; sourceTree = "<group>"; };
-		E0451F3619D7906E00A832D7 /* ILSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILSession.m; sourceTree = "<group>"; };
 		E0451F3919D7B55F00A832D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E050398719D76192005C7195 /* P4CLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P4CLoginViewController.h; sourceTree = "<group>"; };
 		E050398819D76192005C7195 /* P4CLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P4CLoginViewController.m; sourceTree = "<group>"; };
-		E050398B19D76833005C7195 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		E050398C19D76833005C7195 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		E050398F19D768B8005C7195 /* MappingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MappingManager.h; sourceTree = "<group>"; };
-		E050399019D768B8005C7195 /* MappingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MappingManager.m; sourceTree = "<group>"; };
-		E050399219D7695E005C7195 /* ApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiClient.h; sourceTree = "<group>"; };
-		E050399319D7695E005C7195 /* ApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiClient.m; sourceTree = "<group>"; };
-		E050399519D76A8F005C7195 /* UserMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMapping.h; sourceTree = "<group>"; };
-		E050399619D76A8F005C7195 /* UserMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMapping.m; sourceTree = "<group>"; };
 		E050399B19D77C21005C7195 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		E050399C19D77C21005C7195 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		E05039A119D781E8005C7195 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
@@ -156,26 +141,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		E050398A19D767D1005C7195 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				E050398B19D76833005C7195 /* User.h */,
-				E050398C19D76833005C7195 /* User.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E050398E19D7685F005C7195 /* Mappings */ = {
-			isa = PBXGroup;
-			children = (
-				E050398F19D768B8005C7195 /* MappingManager.h */,
-				E050399019D768B8005C7195 /* MappingManager.m */,
-				E050399519D76A8F005C7195 /* UserMapping.h */,
-				E050399619D76A8F005C7195 /* UserMapping.m */,
-			);
-			path = Mappings;
-			sourceTree = "<group>";
-		};
 		E08874F819D7550E0044109A = {
 			isa = PBXGroup;
 			children = (
@@ -200,8 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				A9CC8C2319D796EC00760EEC /* Views */,
-				E050398E19D7685F005C7195 /* Mappings */,
-				E050398A19D767D1005C7195 /* Models */,
 				E050398619D7612F005C7195 /* ViewControllers */,
 				E088750B19D7550F0044109A /* ViewController.h */,
 				E088750C19D7550F0044109A /* ViewController.m */,
@@ -217,13 +180,9 @@
 		E088750419D7550F0044109A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E0451F3519D7906E00A832D7 /* ILSession.h */,
-				E0451F3619D7906E00A832D7 /* ILSession.m */,
 				E088750819D7550F0044109A /* AppDelegate.h */,
 				E088750919D7550F0044109A /* AppDelegate.m */,
 				E088750619D7550F0044109A /* main.m */,
-				E050399219D7695E005C7195 /* ApiClient.h */,
-				E050399319D7695E005C7195 /* ApiClient.m */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -380,10 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E050398D19D76833005C7195 /* User.m in Sources */,
 				E088750D19D7550F0044109A /* ViewController.m in Sources */,
-				E050399119D768B8005C7195 /* MappingManager.m in Sources */,
-				E050399719D76A8F005C7195 /* UserMapping.m in Sources */,
 				A9910EC119D7E04300B4D71E /* ProfileViewController.m in Sources */,
 				A99CB7C519D83C3700792F34 /* PollSentViewController.m in Sources */,
 				E05039A319D781E8005C7195 /* MenuTableViewController.m in Sources */,
@@ -394,8 +350,6 @@
 				E050398919D76192005C7195 /* P4CLoginViewController.m in Sources */,
 				E088750719D7550F0044109A /* main.m in Sources */,
 				A9CC8C2619D7974700760EEC /* PollExpandableCellTableViewCell.m in Sources */,
-				E050399419D7695E005C7195 /* ApiClient.m in Sources */,
-				E0451F3719D7906E00A832D7 /* ILSession.m in Sources */,
 				A93208CF19D7D8DE00D34D2F /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
