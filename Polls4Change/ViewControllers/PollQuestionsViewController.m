@@ -59,14 +59,16 @@
 }
 - (IBAction)didPressSubmitButton:(id)sender {
     SendGrid *sendgrid = [SendGrid apiUser:@"MarcoRmz" apiKey:@"Mara19mr."];
-    
+    UIImage* photo = [UIImage imageNamed:@"cupon"];
     SendGridEmail *email = [[SendGridEmail alloc] init];
     email.to = @"roelcastanomoreno@gmail.com";
-    email.from = @"marcojr93@hotmail.com";
+    email.from = @"hello@polls4change.com";
     email.subject = @"Polls4Change Cupon";
-    email.html = @"<h1>Thank you for answering this poll, now enjoy this cupon!   20% off in your entire meal. Cupon Code: 4F563SD</h1>";
-    email.text = @"Thank you for answering this poll, now enjoy this cupon!   20% off in your entire meal. Cupon Code: 4F563SD";
-    
+    [email attachImage:photo];
+    email.inlinePhoto = true;
+    email.html = @"<h1>Thank you for answering this poll, now enjoy this cupon!</h1><img src =\"cid:cupon.png\">";
+    email.text = @"Thank you for answering this poll, now enjoy this cupon!";
+    [email setReplyTo:@"no-reply@polls4change.com"];
     [sendgrid sendWithWeb:email];
 }
 
