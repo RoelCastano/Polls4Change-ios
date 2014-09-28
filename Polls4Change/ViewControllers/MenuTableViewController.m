@@ -7,95 +7,91 @@
 //
 
 #import "MenuTableViewController.h"
+#import <REFrostedViewController/REFrostedViewController.h>
+#import "User.h"
+#import "ILSession.h"
 
-@interface MenuTableViewController ()
+const int ILNumberOfRowsInSection = 3;
+const int ILNumberOfSections = 1;
+
+@interface MenuTableViewController () <UITableViewDelegate>
+
+@property (strong, nonatomic) UINavigationController *navController;
+@property (strong, nonatomic) IBOutlet UITableView *menuTableView;
+@property (strong, nonatomic) IBOutlet UIImageView *userProfileImageView;
 
 @end
 
 @implementation MenuTableViewController
 
-- (void)viewDidLoad {
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navController =  [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
+}
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    NSLog(@"DID LOAD Menu");
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.menuTableView.delegate = self;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    User *currentUser = [activeSession currentUser];
     
-    // Configure the cell...
+    //self.userName.text = currentUser.name;
+    self.userProfileImageView.layer.cornerRadius = self.userProfileImageView.frame.size.width / 2;
+    self.userProfileImageView.clipsToBounds = YES;
+
+//    if ([currentUser.avatarURL length] > 0) {
+////        self.userImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: currentUser.avatarURL]]];
+////        self.userImageView.layer.cornerRadius = self.userImageView.frame.size.width / 2;
+////        self.userImageView.clipsToBounds = YES;
+////        self.userImageView.contentMode = UIViewContentModeScaleAspectFill;
+//    }
     
-    return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return ILNumberOfRowsInSection;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return ILNumberOfSections;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+//    if (indexPath.row == 0) {
+//        ILEditProfileViewController *editProfileVC = [self.storyboard instantiateViewControllerWithIdentifier:@"editProfileController"];
+//        self.navController.viewControllers =  @[editProfileVC];
+//    } else if (indexPath.row == 1){
+//        ILUserWalletViewController *carteraVC = [self.storyboard instantiateViewControllerWithIdentifier:@"carteraVC"];
+//        self.navController.viewControllers = @[carteraVC];
+//    } else if (indexPath.row == 2){
+//        ILRetirarViewController *retirarVC = [self.storyboard instantiateViewControllerWithIdentifier:@"retirarVC"];
+//        self.navController.viewControllers = @[retirarVC];
+//    } else if (indexPath.row == 3){
+//        ILConfigurationViewController *configuracionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"configuracionVC"];
+//        self.navController.viewControllers = @[configuracionVC];
+//    } else if (indexPath.row == 4) {
+//        ILUser *user = [[ILUser alloc] init];
+//        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+//        [user logOutWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+//            [self.frostedViewController hideMenuViewController];
+//            [self dismissViewControllerAnimated:YES completion:nil];
+//            [activeSession clearSessionAndToken];
+//            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+//        } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+//            NSLog(@"Error - Could not logout user");
+//        }];
+//    }
+    if (NSLocationInRange(indexPath.row, NSMakeRange(0, 5))) {
+        self.frostedViewController.contentViewController = self.navController;
+        [self.frostedViewController hideMenuViewController];
+    }
+    
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
