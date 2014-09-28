@@ -35,11 +35,11 @@ const int ILNumberOfSections = 1;
     self.menuTableView.delegate = self;
     
     self.menuTableView.separatorColor = [UIColor colorWithRed:150/255.0f green:161/255.0f blue:177/255.0f alpha:1.0f];
-    self.menuTableView.opaque = NO;
+    self.menuTableView.opaque = YES;
     self.menuTableView.backgroundColor = [UIColor clearColor];
 
-    
-    
+    self.navController.navigationItem.titleView.tintColor = [UIColor whiteColor];
+    self.navController.navigationItem.title = @"Feed";
     
     User *currentUser = [activeSession currentUser];
     
@@ -100,5 +100,4 @@ const int ILNumberOfSections = 1;
     }
     
 }
-
 @end

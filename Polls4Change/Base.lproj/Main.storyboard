@@ -92,7 +92,7 @@
                         <sections>
                             <tableViewSection id="jEm-aq-bmi">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="206" id="2Ip-iN-2W3">
+                                    <tableViewCell alpha="0.5" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="206" id="2Ip-iN-2W3">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Ip-iN-2W3" id="f4V-dK-EJ3">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -136,8 +136,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8A0-Vl-Z43">
+                                    <tableViewCell alpha="0.5" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8A0-Vl-Z43">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8A0-Vl-Z43" id="brW-3D-Juf">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -153,8 +154,9 @@
                                         <connections>
                                             <segue destination="UAA-pn-W6Z" kind="modal" id="WPE-2b-EIi"/>
                                         </connections>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2Zu-Zi-h09">
+                                    <tableViewCell alpha="0.5" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2Zu-Zi-h09">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Zu-Zi-h09" id="8xT-ic-YV7">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -170,8 +172,9 @@
                                         <connections>
                                             <segue destination="rBx-SH-3gg" kind="modal" id="RM5-1O-XBo"/>
                                         </connections>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="u4l-me-hbS">
+                                    <tableViewCell alpha="0.5" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="u4l-me-hbS">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u4l-me-hbS" id="NbS-64-2OL">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -187,6 +190,7 @@
                                         <connections>
                                             <segue destination="Lbi-oJ-uaQ" kind="modal" id="BBb-8s-s5A"/>
                                         </connections>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -260,18 +264,18 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="161" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="swc-wT-CsN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="swc-wT-CsN">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="pollCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="pollCell" rowHeight="161" id="0R7-LB-6hP" customClass="PollExpandableCellTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="pollCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="pollCell" rowHeight="200" id="0R7-LB-6hP" customClass="PollExpandableCellTableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0R7-LB-6hP" id="80b-jf-pDG">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kOu-x7-SRb">
-                                                    <rect key="frame" x="8" y="55" width="304" height="106"/>
+                                                    <rect key="frame" x="8" y="58" width="304" height="142"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Descripción:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hw-hw-G4B">
                                                             <rect key="frame" x="0.0" y="0.0" width="241" height="21"/>
@@ -297,6 +301,15 @@
                                                             <color key="textColor" red="0.0" green="0.74901960779999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjd-9h-DSg">
+                                                            <rect key="frame" x="116" y="109" width="72" height="26"/>
+                                                            <state key="normal" title="Contestar!">
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="didPressAnswerButton:" destination="0R7-LB-6hP" eventType="touchUpInside" id="hKo-jd-0el"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
@@ -359,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPs-QA-jHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1684" y="98"/>
+            <point key="canvasLocation" x="1684" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Pmv-pD-XDV">

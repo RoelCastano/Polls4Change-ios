@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *pollRewardsLabel;
 @property (weak, nonatomic) IBOutlet UIView *expandedContentView;
 @property (weak, nonatomic) IBOutlet UIImageView *expandIconImageView;
+@property (assign) BOOL expanded;
 
 @end
