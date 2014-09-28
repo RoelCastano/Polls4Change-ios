@@ -137,7 +137,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8A0-Vl-Z43">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="8A0-Vl-Z43">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8A0-Vl-Z43" id="brW-3D-Juf">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -221,11 +221,15 @@
         <scene sceneID="TPV-B1-PrF">
             <objects>
                 <navigationController storyboardIdentifier="contentController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UAA-pn-W6Z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Qq8-LH-CoV"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="4ps-hA-KBg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.0" green="0.74901960779999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="E4o-ug-b1b" kind="relationship" relationship="rootViewController" id="UdH-TC-WBu"/>
@@ -235,7 +239,7 @@
             </objects>
             <point key="canvasLocation" x="1116" y="98"/>
         </scene>
-        <!--Feed View Controller-->
+        <!--Encuestas-->
         <scene sceneID="z5A-X0-8u2">
             <objects>
                 <viewController storyboardIdentifier="feedVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E4o-ug-b1b" customClass="FeedViewController" sceneMemberID="viewController">
@@ -244,7 +248,7 @@
                         <viewControllerLayoutGuide type="bottom" id="agp-VN-epb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CMN-2X-UN9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="161" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="swc-wT-CsN">
@@ -332,7 +336,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="edd-5V-LUc">
+                    <navigationItem key="navigationItem" title="Encuestas" id="edd-5V-LUc">
                         <barButtonItem key="leftBarButtonItem" image="menu-btn" id="HND-ZO-lyo">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -347,6 +351,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPs-QA-jHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1684" y="98"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pmv-pD-XDV">
+            <objects>
+                <navigationController id="Lbi-oJ-uaQ" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="hwo-sJ-acC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.74901960779999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nJ6-9j-cHS" kind="relationship" relationship="rootViewController" id="RUB-M8-beQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vH5-da-FhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="831"/>
+        </scene>
+        <!--Configuración-->
+        <scene sceneID="vkY-g9-Pil">
+            <objects>
+                <viewController id="nJ6-9j-cHS" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fv8-aq-KdH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tcz-0v-C29"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pBb-jx-Zrq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distancia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIj-S6-KC6">
+                                <rect key="frame" x="16" y="20" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q7J-th-qpa">
+                                <rect key="frame" x="103" y="16" width="131" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofR-Kl-3Vu">
+                                <rect key="frame" x="240" y="20" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Configuración" id="oBu-YE-0HS">
+                        <barButtonItem key="leftBarButtonItem" image="menu-btn" id="Meq-Nx-Uo5">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vDd-op-Eaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="831"/>
         </scene>
     </scenes>
     <resources>

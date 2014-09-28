@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F243CAD3BC29399ABE2CFF2 /* libPods-Polls4Change.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9478055ADACFAE4EB8D9D3 /* libPods-Polls4Change.a */; };
+		A93208CF19D7D8DE00D34D2F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93208CE19D7D8DE00D34D2F /* SettingsViewController.m */; };
 		A9CC8C2619D7974700760EEC /* PollExpandableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CC8C2519D7974700760EEC /* PollExpandableCellTableViewCell.m */; };
 		E0451F3719D7906E00A832D7 /* ILSession.m in Sources */ = {isa = PBXBuildFile; fileRef = E0451F3619D7906E00A832D7 /* ILSession.m */; };
 		E0451F3A19D7B55F00A832D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0451F3819D7B55F00A832D7 /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		8BF932C36D37260E1A1AD9F9 /* Pods-Polls4Change.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polls4Change.release.xcconfig"; path = "Pods/Target Support Files/Pods-Polls4Change/Pods-Polls4Change.release.xcconfig"; sourceTree = "<group>"; };
 		A0268A0663F20E70495F6A29 /* Pods-Polls4Change.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polls4Change.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Polls4Change/Pods-Polls4Change.debug.xcconfig"; sourceTree = "<group>"; };
+		A93208CD19D7D8DE00D34D2F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		A93208CE19D7D8DE00D34D2F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		A9CC8C2419D7974700760EEC /* PollExpandableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollExpandableCellTableViewCell.h; sourceTree = "<group>"; };
 		A9CC8C2519D7974700760EEC /* PollExpandableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollExpandableCellTableViewCell.m; sourceTree = "<group>"; };
 		BC9478055ADACFAE4EB8D9D3 /* libPods-Polls4Change.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Polls4Change.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +135,8 @@
 				E05039A219D781E8005C7195 /* MenuTableViewController.m */,
 				E05039A419D7820C005C7195 /* FeedViewController.h */,
 				E05039A519D7820C005C7195 /* FeedViewController.m */,
+				A93208CD19D7D8DE00D34D2F /* SettingsViewController.h */,
+				A93208CE19D7D8DE00D34D2F /* SettingsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				A9CC8C2619D7974700760EEC /* PollExpandableCellTableViewCell.m in Sources */,
 				E050399419D7695E005C7195 /* ApiClient.m in Sources */,
 				E0451F3719D7906E00A832D7 /* ILSession.m in Sources */,
+				A93208CF19D7D8DE00D34D2F /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
