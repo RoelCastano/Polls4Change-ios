@@ -10,4 +10,7 @@
 
 @interface PollQuestionsViewController : UIViewController
 
+
+-(instancetype)initWithQuestion:(NSString*)question;
+
 @end

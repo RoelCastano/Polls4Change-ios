@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class PollExpandableCellTableViewCell;
+
+@protocol PollExpandableCellTableViewCellDelegate <NSObject>
+
+@required
+- (void)pollExpandableCellButtonPressed:(PollExpandableCellTableViewCell *)pollExpandableCell;
+
+@end
+
+
 @interface PollExpandableCellTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *companyNameImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *charityNameImageView;
@@ -18,5 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIView *expandedContentView;
 @property (weak, nonatomic) IBOutlet UIImageView *expandIconImageView;
 @property (assign) BOOL expanded;
+
+@property(strong, nonatomic) id<PollExpandableCellTableViewCellDelegate> delegate;
 
 @end

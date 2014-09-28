@@ -8,9 +8,10 @@
 
 #import "FeedViewController.h"
 #import "PollExpandableCellTableViewCell.h"
+#import "PollQuestionsViewController.h"
 #import <REFrostedViewController/REFrostedViewController.h>
 
-@interface FeedViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface FeedViewController () <UITableViewDataSource, UITableViewDelegate, PollExpandableCellTableViewCellDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *pollsTableView;
 @property (strong, nonatomic)NSArray* companyNames;
 @property (strong, nonatomic)NSArray* charityNames;
@@ -81,6 +82,7 @@
         cell = [[PollExpandableCellTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
+    cell.delegate = self;
     
     cell.pollTitleLabel.text = [self.pollTitles objectAtIndex:indexPath.row];
     cell.pollQuestionNumberLabel.text = [self.pollQuestionNumbers objectAtIndex:indexPath.row];
@@ -129,6 +131,12 @@
     }
 }
 
+-(void)pollExpandableCellButtonPressed:(PollExpandableCellTableViewCell *)pollExpandableCell
+{
+    NSLog(@"presents VC");
+    PollQuestionsViewController *pollVC = [[PollQuestionsViewController alloc] initWithQuestion:@"What do you think of our new menu?"];
+    [self.navigationController presentViewController:pollVC animated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 

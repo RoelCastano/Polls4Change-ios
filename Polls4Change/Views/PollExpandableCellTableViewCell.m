@@ -22,7 +22,11 @@
     // Configure the view for the selected state
 }
 - (IBAction)didPressAnswerButton:(id)sender {
-    
+    if (self.delegate) {
+        NSLog(@"ENTERED Deleggate FUNCTION");
+        [self.delegate pollExpandableCellButtonPressed:self];
+    }
+
 }
 
 @end

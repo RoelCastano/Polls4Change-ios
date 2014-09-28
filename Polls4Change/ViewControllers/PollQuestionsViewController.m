@@ -7,21 +7,41 @@
 //
 
 #import "PollQuestionsViewController.h"
+#import <HexColors/HexColor.h>
 
 @interface PollQuestionsViewController ()
+
+@property (strong, nonatomic) IBOutlet UILabel *questionLabel;
 
 @end
 
 @implementation PollQuestionsViewController
 
+-(instancetype)initWithQuestion:(NSString*)question
+{
+    self = [super init];
+    
+    if (self) {
+        self.questionLabel.text = question;
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.questionLabel.layer.cornerRadius = 5;
+    self.questionLabel.layer.borderColor = [UIColor colorWithHexString:@"#00BFFF"].CGColor;
+    self.questionLabel.layer.borderWidth = 2.0f;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)backButtonPressed:(id)sender {
+    
 }
 
 /*
