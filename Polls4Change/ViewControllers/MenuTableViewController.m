@@ -12,6 +12,7 @@
 #import "FeedViewController.h"
 #import "SettingsViewController.h"
 #import "ProfileViewController.h"
+#import "PollSentViewController.h"
 #import "ILSession.h"
 
 const int ILNumberOfRowsInSection = 4;
