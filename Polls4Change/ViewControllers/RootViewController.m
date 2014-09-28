@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.liveBlurBackgroundStyle = .8;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,6 +29,8 @@
 {
     self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"contentController"];
     self.menuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"menuController"];
+
+
 }
 
 /*

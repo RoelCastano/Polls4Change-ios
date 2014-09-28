@@ -25,11 +25,13 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)signInButtonPressed:(id)sender {
-//    RootViewController *rootVC = [self.storyboard instantiateViewControllerWithIdentifier:@"rootVc"];
-//    
-//    [self presentViewController:rootVC
-//                       animated:YES
-//                     completion:nil];
+    RootViewController *rootVC = [self.storyboard instantiateViewControllerWithIdentifier:@"rootVc"];
+    rootVC.direction = REFrostedViewControllerDirectionLeft;
+    rootVC.liveBlurBackgroundStyle = REFrostedViewControllerLiveBackgroundStyleLight;
+    rootVC.liveBlur = YES;
+    [self presentViewController:rootVC
+                       animated:YES
+                     completion:nil];
 
 }
 

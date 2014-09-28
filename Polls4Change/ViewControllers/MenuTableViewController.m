@@ -11,7 +11,7 @@
 #import "User.h"
 #import "ILSession.h"
 
-const int ILNumberOfRowsInSection = 3;
+const int ILNumberOfRowsInSection = 4;
 const int ILNumberOfSections = 1;
 
 @interface MenuTableViewController () <UITableViewDelegate>
@@ -34,12 +34,19 @@ const int ILNumberOfSections = 1;
     [super viewDidLoad];
     self.menuTableView.delegate = self;
     
+    self.menuTableView.separatorColor = [UIColor colorWithRed:150/255.0f green:161/255.0f blue:177/255.0f alpha:1.0f];
+    self.menuTableView.opaque = NO;
+    self.menuTableView.backgroundColor = [UIColor clearColor];
+
+    
+    
+    
     User *currentUser = [activeSession currentUser];
     
     //self.userName.text = currentUser.name;
     self.userProfileImageView.layer.cornerRadius = self.userProfileImageView.frame.size.width / 2;
     self.userProfileImageView.clipsToBounds = YES;
-
+    self.userProfileImageView.image = [UIImage imageNamed:@"faceBrad"];
 //    if ([currentUser.avatarURL length] > 0) {
 ////        self.userImageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString: currentUser.avatarURL]]];
 ////        self.userImageView.layer.cornerRadius = self.userImageView.frame.size.width / 2;
