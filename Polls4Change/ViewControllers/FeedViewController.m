@@ -140,7 +140,8 @@
 -(void)pollExpandableCellButtonPressed:(PollExpandableCellTableViewCell *)pollExpandableCell
 {
     NSLog(@"presents VC");
-    PollQuestionsViewController *pollVC = [[PollQuestionsViewController alloc] initWithQuestion:@"What do you think of our new menu?"];
+    PollQuestionsViewController *pollVC = [self.storyboard instantiateViewControllerWithIdentifier:@"questionVC"];
+    [pollVC setQuestionLabel:@"WHAT IS LOVE?"];
     [self.navigationController presentViewController:pollVC animated:YES completion:nil];
 }
 /*

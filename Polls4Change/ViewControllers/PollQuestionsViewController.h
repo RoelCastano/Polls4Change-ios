@@ -12,5 +12,7 @@
 
 
 -(instancetype)initWithQuestion:(NSString*)question;
+- (void)setQuestionLabel:(NSString *)questionLabel;
+
 
 @end

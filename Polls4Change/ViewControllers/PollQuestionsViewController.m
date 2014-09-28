@@ -28,6 +28,11 @@
     return self;
 }
 
+- (void)setQuestionLabel:(NSString *)questionLabel
+{
+    self.questionLabel.text = questionLabel;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
