@@ -30,6 +30,11 @@
     [self.frostedViewController presentMenuViewController];
 }
 
+- (IBAction)distanceSlider:(UISlider *)sender {
+    int valueSlider = sender.value;
+    self.distanceLabel.text = [NSString stringWithFormat:@"%d km", valueSlider];
+}
+
 /*
 #pragma mark - Navigation
 
