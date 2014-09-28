@@ -45,6 +45,7 @@
     self.pollDescriptions = [NSArray arrayWithObjects:@"Queremos conocer tu opinion sobre nuestras nuevas hamburguesas para ver cuales se quedan y cuales se van.", @"Queremos saber cuales son tus tacos favoritos.", @"Queremos saber que te interesa que pongamos en nuestro nuevo menu.", @"Queremos saber cuales son tus combos favoritos.",nil];
     
     self.pollRewards = [NSArray arrayWithObjects:@"Refresco gratis en la compra de una hamburguesa.", @"1 taco gratis en la compra de 2.", @"Pizza mediana a solo $80", @"Combos a solo $80 de Lunes a Jueves.",nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,6 +88,7 @@
     cell.pollRewardsLabel.text = [self.pollRewards objectAtIndex:indexPath.row];
     cell.companyNameImageView.image = [UIImage imageNamed:@"rocketpizza"];
     cell.charityNameImageView.image = [UIImage imageNamed:@"educa"];
+    
     if (cell.expanded) {
         cell.expandedContentView.hidden = NO;
         cell.expandIconImageView.image = [UIImage imageNamed:@"collapse"];
