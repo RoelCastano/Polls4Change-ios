@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-12" y="98"/>
+            <point key="canvasLocation" x="122" y="98"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="k0r-OS-3WC">
@@ -373,6 +373,54 @@
             </objects>
             <point key="canvasLocation" x="1116" y="831"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rm5-Ju-JPS">
+            <objects>
+                <navigationController id="rBx-SH-3gg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="56i-Uc-FfM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.74901960779999999" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RBO-YI-s9w" kind="relationship" relationship="rootViewController" id="sk4-sE-lNj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gt0-6H-QRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="1498"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="LgS-iH-7Bz">
+            <objects>
+                <viewController id="RBO-YI-s9w" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CZT-ke-KgG"/>
+                        <viewControllerLayoutGuide type="bottom" id="FLV-aD-8Z3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="frX-c9-dZU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="m81-jC-kEX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="574"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Perfil" id="Vrv-nP-lP9">
+                        <barButtonItem key="leftBarButtonItem" image="menu-btn" id="J8Q-sB-R2l">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEx-Aq-qqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="1498"/>
+        </scene>
         <!--Configuración-->
         <scene sceneID="vkY-g9-Pil">
             <objects>
@@ -424,6 +472,7 @@
         <image name="login-user" width="19" height="18"/>
         <image name="menu-btn" width="15" height="10"/>
         <image name="num-circle" width="30" height="30"/>
+        <image name="profile" width="320" height="576"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
