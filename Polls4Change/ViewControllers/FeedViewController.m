@@ -32,7 +32,7 @@
     [self.pollsTableView setDelegate:self];
     [self.pollsTableView setDataSource:self];
     self.firstLoad = YES;
-    self.navigationController.navigationBar.topItem.title = @"Feed";
+    self.navigationController.navigationBar.topItem.title = @"Encuestas";
     [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     self.lastCellExpanded = -1;
 
@@ -45,9 +45,9 @@
     
     self.charityNames = [NSArray arrayWithObjects:@"Becalos", @"EDUCA", @"LUCA", @"Unidos",nil];
     
-    self.pollTitles = [NSArray arrayWithObjects:@"Nuevas Hamburguesas", @"Tacos Favoritos", @"Nuevo Menu", @"Combos",nil];
+    self.pollTitles = [NSArray arrayWithObjects:@"Nuevas Burgers", @"Tacos Favoritos", @"Nuevo Menu", @"Combos",nil];
     
-    self.pollQuestionNumbers = [NSArray arrayWithObjects:@"5", @"4", @"10", @"5",nil];
+    self.pollQuestionNumbers = [NSArray arrayWithObjects:@"4", @"5", @"10", @"5",nil];
     
     self.pollDescriptions = [NSArray arrayWithObjects:@"Queremos conocer tu opinion sobre nuestras nuevas hamburguesas para ver cuales se quedan y cuales se van.", @"Queremos saber cuales son tus tacos favoritos.", @"Queremos saber que te interesa que pongamos en nuestro nuevo menu.", @"Queremos saber cuales son tus combos favoritos.",nil];
     
@@ -141,8 +141,7 @@
 {
     NSLog(@"presents VC");
     PollQuestionsViewController *pollVC = [self.storyboard instantiateViewControllerWithIdentifier:@"questionVC"];
-    [pollVC setQuestionLabel:@"WHAT IS LOVE?"];
-    [self.navigationController presentViewController:pollVC animated:YES completion:nil];
+    [self.navigationController pushViewController:pollVC animated:YES];
 }
 /*
 #pragma mark - Navigation

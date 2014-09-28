@@ -12,6 +12,7 @@
 @interface PollQuestionsViewController ()
 
 @property (strong, nonatomic) IBOutlet UILabel *questionLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *companyIcon;
 
 @end
 
@@ -23,6 +24,9 @@
     
     if (self) {
         self.questionLabel.text = question;
+        self.navigationController.navigationBar.topItem.title = @"Burger Station";
+        [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+
     }
     
     return self;
@@ -39,6 +43,10 @@
     self.questionLabel.layer.cornerRadius = 5;
     self.questionLabel.layer.borderColor = [UIColor colorWithHexString:@"#00BFFF"].CGColor;
     self.questionLabel.layer.borderWidth = 2.0f;
+    self.companyIcon.layer.cornerRadius = 2;
+    self.companyIcon.layer.borderWidth = 2;
+    self.companyIcon.layer.borderColor = [UIColor blackColor].CGColor;
+    self.companyIcon.image = [UIImage imageNamed:@"burgerStationLogo"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,7 +54,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)backButtonPressed:(id)sender {
-    
+    [self dismissViewControllerAnimated:self completion:nil];
 }
 
 /*

@@ -9,11 +9,18 @@
 #import "PollExpandableCellTableViewCell.h"
 #import "FeedViewController.h"
 
+@interface PollExpandableCellTableViewCell ()
+
+@property (strong, nonatomic) IBOutlet UIButton *answerButton;
+
+@end
+
 @implementation PollExpandableCellTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    self.answerButton.layer.cornerRadius = 5;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
