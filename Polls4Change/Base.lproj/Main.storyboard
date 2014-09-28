@@ -137,7 +137,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="8A0-Vl-Z43">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8A0-Vl-Z43">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8A0-Vl-Z43" id="brW-3D-Juf">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -150,6 +150,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="UAA-pn-W6Z" kind="modal" id="WPE-2b-EIi"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2Zu-Zi-h09">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -164,6 +167,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="rBx-SH-3gg" kind="modal" id="RM5-1O-XBo"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="u4l-me-hbS">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -178,6 +184,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Lbi-oJ-uaQ" kind="modal" id="BBb-8s-s5A"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -356,6 +365,7 @@
         <scene sceneID="Pmv-pD-XDV">
             <objects>
                 <navigationController id="Lbi-oJ-uaQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dki-WH-wFX"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="hwo-sJ-acC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -391,7 +401,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gt0-6H-QRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="1498"/>
+            <point key="canvasLocation" x="1116" y="1590"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="LgS-iH-7Bz">
@@ -414,6 +424,9 @@
                     <navigationItem key="navigationItem" title="Perfil" id="Vrv-nP-lP9">
                         <barButtonItem key="leftBarButtonItem" image="menu-btn" id="J8Q-sB-R2l">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="didPressMenuButton:" destination="RBO-YI-s9w" id="Qvb-4j-cw0"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -430,7 +443,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Tcz-0v-C29"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pBb-jx-Zrq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distancia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIj-S6-KC6">
@@ -454,6 +467,9 @@
                     <navigationItem key="navigationItem" title="Configuración" id="oBu-YE-0HS">
                         <barButtonItem key="leftBarButtonItem" image="menu-btn" id="Meq-Nx-Uo5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="didPressMenuButton:" destination="nJ6-9j-cHS" id="lZX-Ws-zy7"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
