@@ -66,7 +66,7 @@
     email.subject = @"Polls4Change Cupon";
     [email attachImage:photo];
     email.inlinePhoto = true;
-    email.html = @"<h1>Thank you for answering this poll, now enjoy this cupon!</h1><img src =\"cid:cupon.png\">";
+    email.html = @"<h1>Thank you for answering this poll, now enjoy this cupon!</h1>";
     email.text = @"Thank you for answering this poll, now enjoy this cupon!";
     [email setReplyTo:@"no-reply@polls4change.com"];
     [sendgrid sendWithWeb:email];
