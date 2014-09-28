@@ -9,6 +9,9 @@
 #import "MenuTableViewController.h"
 #import <REFrostedViewController/REFrostedViewController.h>
 #import "User.h"
+#import "FeedViewController.h"
+#import "SettingsViewController.h"
+#import "ProfileViewController.h"
 #import "ILSession.h"
 
 const int ILNumberOfRowsInSection = 4;
@@ -70,18 +73,18 @@ const int ILNumberOfSections = 1;
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-//    if (indexPath.row == 0) {
-//        ILEditProfileViewController *editProfileVC = [self.storyboard instantiateViewControllerWithIdentifier:@"editProfileController"];
-//        self.navController.viewControllers =  @[editProfileVC];
-//    } else if (indexPath.row == 1){
-//        ILUserWalletViewController *carteraVC = [self.storyboard instantiateViewControllerWithIdentifier:@"carteraVC"];
-//        self.navController.viewControllers = @[carteraVC];
-//    } else if (indexPath.row == 2){
-//        ILRetirarViewController *retirarVC = [self.storyboard instantiateViewControllerWithIdentifier:@"retirarVC"];
-//        self.navController.viewControllers = @[retirarVC];
-//    } else if (indexPath.row == 3){
-//        ILConfigurationViewController *configuracionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"configuracionVC"];
-//        self.navController.viewControllers = @[configuracionVC];
+  if (indexPath.row == 0) {
+    } else if (indexPath.row == 1){
+        FeedViewController *feedVC = [self.storyboard instantiateViewControllerWithIdentifier:@"feedVC"];
+        self.navController.viewControllers = @[feedVC];
+    } else if (indexPath.row == 2){
+        ProfileViewController *profileVC = [self.storyboard instantiateViewControllerWithIdentifier:@"profileVC"];
+        self.navController.viewControllers = @[profileVC];
+    } else if (indexPath.row == 3){
+        SettingsViewController *configVC = [self.storyboard instantiateViewControllerWithIdentifier:@"configVC"];
+        self.navController.viewControllers = @[configVC];
+
+    }
 //    } else if (indexPath.row == 4) {
 //        ILUser *user = [[ILUser alloc] init];
 //        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];

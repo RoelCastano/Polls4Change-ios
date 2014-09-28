@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
@@ -151,9 +151,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="UAA-pn-W6Z" kind="modal" id="WPE-2b-EIi"/>
-                                        </connections>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell alpha="0.5" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2Zu-Zi-h09">
@@ -169,9 +166,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="rBx-SH-3gg" kind="modal" id="RM5-1O-XBo"/>
-                                        </connections>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell alpha="0.5" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="u4l-me-hbS">
@@ -187,9 +181,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Lbi-oJ-uaQ" kind="modal" id="BBb-8s-s5A"/>
-                                        </connections>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </cells>
@@ -419,7 +410,7 @@
         <!--Perfil-->
         <scene sceneID="LgS-iH-7Bz">
             <objects>
-                <viewController id="RBO-YI-s9w" customClass="ProfileViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RBO-YI-s9w" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CZT-ke-KgG"/>
                         <viewControllerLayoutGuide type="bottom" id="FLV-aD-8Z3"/>
@@ -450,7 +441,7 @@
         <!--Configuración-->
         <scene sceneID="vkY-g9-Pil">
             <objects>
-                <viewController id="nJ6-9j-cHS" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="configVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nJ6-9j-cHS" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fv8-aq-KdH"/>
                         <viewControllerLayoutGuide type="bottom" id="Tcz-0v-C29"/>
