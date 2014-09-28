@@ -7,6 +7,7 @@
 //
 
 #import "PollExpandableCellTableViewCell.h"
+#import "FeedViewController.h"
 
 @implementation PollExpandableCellTableViewCell
 

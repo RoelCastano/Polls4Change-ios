@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F243CAD3BC29399ABE2CFF2 /* libPods-Polls4Change.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9478055ADACFAE4EB8D9D3 /* libPods-Polls4Change.a */; };
 		A93208CF19D7D8DE00D34D2F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93208CE19D7D8DE00D34D2F /* SettingsViewController.m */; };
+		A956E4AF19D7FF1700E251A3 /* PollQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A956E4AE19D7FF1700E251A3 /* PollQuestionsViewController.m */; };
 		A9910EC119D7E04300B4D71E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9910EC019D7E04300B4D71E /* ProfileViewController.m */; };
 		A9CC8C2619D7974700760EEC /* PollExpandableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CC8C2519D7974700760EEC /* PollExpandableCellTableViewCell.m */; };
 		E0451F3719D7906E00A832D7 /* ILSession.m in Sources */ = {isa = PBXBuildFile; fileRef = E0451F3619D7906E00A832D7 /* ILSession.m */; };
@@ -44,6 +45,8 @@
 		A0268A0663F20E70495F6A29 /* Pods-Polls4Change.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Polls4Change.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Polls4Change/Pods-Polls4Change.debug.xcconfig"; sourceTree = "<group>"; };
 		A93208CD19D7D8DE00D34D2F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		A93208CE19D7D8DE00D34D2F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		A956E4AD19D7FF1700E251A3 /* PollQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollQuestionsViewController.h; sourceTree = "<group>"; };
+		A956E4AE19D7FF1700E251A3 /* PollQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollQuestionsViewController.m; sourceTree = "<group>"; };
 		A9910EBF19D7E04300B4D71E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		A9910EC019D7E04300B4D71E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		A9CC8C2419D7974700760EEC /* PollExpandableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollExpandableCellTableViewCell.h; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				A93208CE19D7D8DE00D34D2F /* SettingsViewController.m */,
 				A9910EBF19D7E04300B4D71E /* ProfileViewController.h */,
 				A9910EC019D7E04300B4D71E /* ProfileViewController.m */,
+				A956E4AD19D7FF1700E251A3 /* PollQuestionsViewController.h */,
+				A956E4AE19D7FF1700E251A3 /* PollQuestionsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				E088750A19D7550F0044109A /* AppDelegate.m in Sources */,
 				E050399D19D77C21005C7195 /* RootViewController.m in Sources */,
 				E05039A619D7820C005C7195 /* FeedViewController.m in Sources */,
+				A956E4AF19D7FF1700E251A3 /* PollQuestionsViewController.m in Sources */,
 				E050398919D76192005C7195 /* P4CLoginViewController.m in Sources */,
 				E088750719D7550F0044109A /* main.m in Sources */,
 				A9CC8C2619D7974700760EEC /* PollExpandableCellTableViewCell.m in Sources */,
